@@ -163,7 +163,7 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: var(--color-secondary-section);
-  background-image: url(/assets/header-background.jpg);
+  background-image: url(assets/header-background.jpg);
   background-size: cover;
   gap: 1rem;
 }
@@ -191,7 +191,7 @@ header h1 {
   margin-bottom: 1rem;
   padding: 3rem;
   background-color: var(--color-secondary-section);
-  background-image: url(/assets/header-graphics-image.jpg);
+  background-image: url(assets/header-graphics-image.jpg);
   background-size: cover;
 }
 /* FOOTER */
