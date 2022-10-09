@@ -11,15 +11,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <!-- Menu component layout -->
-      <a href="index.html">Logo</a>
-      <ul>
-        <li><a href="#advantages">Advantages</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#team">Team</a></li>
-      </ul>
-      <button type="button">Learn More &#x2794;</button>
+      <div class="logo-title"><a href="index.html">Logo</a></div>
+      <a href="#" class="toggle-button-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </div>
+      <div class="navbar-button">
+        <button type="button">Learn More &#x2794;</button>
+      </div>
     </nav>
     <header>
       <!-- Header section -->
@@ -217,15 +226,15 @@
     </section>
     <footer>
       <!-- Footer component -->
-      <div>
+      <div class="footer-logo-contact-wrapper">
         <h2>Logo</h2>
         <ul>
           <li><a>contact@logo.com</a></li>
           <li><a>+45 23225343</a></li>
         </ul>
       </div>
-      <section>
-        <div>
+      <section class="footer-links-wrapper">
+        <div class="footer-links-section">
           <h3>Eos Purus</h3>
           <ul>
             <li><a href="">Stricte Natione</a></li>
@@ -233,7 +242,7 @@
             <li><a href="">Patiens Quos Neglexi</a></li>
           </ul>
         </div>
-        <div>
+        <div class="footer-links-section">
           <h3>Company</h3>
           <ul>
             <li><a href="">About Us</a></li>
@@ -243,6 +252,6 @@
         </div>
       </section>
     </footer>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
