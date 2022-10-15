@@ -274,7 +274,7 @@ header h1 {
 /* PRODUCT SECTION */
 #product {
   min-height: 80vh;
-  padding: 2.5rem;
+  padding: 2rem;
   background-color: var(--color-secondary-darker);
   display: grid;
   grid-template-columns: 1fr;
@@ -346,6 +346,63 @@ header h1 {
 
 .product_text_wrappers p {
   color: var(--color-primary);
+}
+
+/* HIGHLIGHT SECTION */
+.highlight {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 80vh;
+  background-color: var(--color-secondary-light);
+}
+
+.highlight h2 {
+  color: var(--color-accent2);
+}
+
+.highlight_small_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.highlight_small_cards div {
+  background-color: var(--color-accent1);
+  height: 125px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: box-shadow 0.5s;
+  border-radius: 10px;
+}
+
+.highlight_small_cards div h3,
+p {
+  color: var(--color-secondary);
+}
+
+.highlight_small_cards div:hover {
+  box-shadow: 5px 5px 12px rgba(33, 33, 33, 0.4);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  max-height: 2.7rem;
+}
+
+/* TEAM SECTION */
+
+#team {
 }
 
 /* FOOTER */
@@ -466,5 +523,15 @@ footer a:hover::after {
 
   header {
     padding: 1.5rem;
+  }
+  .highlight_small_cards div {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .highlight h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
