@@ -15,7 +15,7 @@
   --color-secondary-light: #eff1f0;
   --color-secondary-dark: #ececec;
   --color-secondary-darker: #dfdfdf;
-  --color-accent1: #fa2f5b;
+  --color-accent1: #a01e3a;
   --color-accent2: #2a99c6;
   --color-accent3: #2c3bbe;
 }
@@ -193,6 +193,15 @@ header h1 {
   background-color: var(--color-secondary-section);
   background-image: url(assets/header-graphics-image.jpg);
   background-size: cover;
+  border-radius: 50%;
+}
+
+/* animation - fade */
+
+.fade {
+  display: block;
+  transform: translateX(-100px);
+  opacity: 0;
 }
 
 /* ADVANTAGES SECTION */
@@ -262,14 +271,81 @@ header h1 {
   color: var(--color-secondary);
 }
 
-/* PRODUCT */
+/* PRODUCT SECTION */
 #product {
-  background-color: #83d6f7;
-}
-
-.product_text {
+  min-height: 80vh;
+  padding: 2.5rem;
+  background-color: var(--color-secondary-darker);
   display: grid;
   grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.product_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-size: cover;
+  gap: 2rem;
+}
+
+.product_header .product_graphics {
+  height: 30vw;
+  width: 30vw;
+  background-image: url(assets/product_header_image.png);
+  border-radius: 50%;
+}
+
+.product_header h2 {
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  padding-bottom: 1rem;
+  color: var(--color-accent2);
+  font-size: 1.75rem;
+}
+
+.product_graphics {
+  width: 20vw;
+  height: 20vw;
+  min-width: 200px;
+  min-height: 200px;
+  margin-bottom: 1rem;
+  padding: 3rem;
+  background-color: var(--color-secondary-section);
+  background-image: url(assets/product_image.png);
+  background-size: cover;
+  border-radius: 50px;
+}
+
+#product article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.product_text {
+  background-color: var(--color-secondary-darker);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.product_text_wrappers {
+  min-width: 300px;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.product_text_wrappers h3 {
+  color: var(--color-accent2);
+}
+
+.product_text_wrappers p {
+  color: var(--color-primary);
 }
 
 /* FOOTER */
@@ -340,16 +416,20 @@ footer a:hover::after {
   padding: 0.25rem;
 }
 
+/* media queries */
+
 @media (max-width: 1140px) {
   header {
     flex-direction: column-reverse;
   }
 }
 
-/* media queries */
 @media (max-width: 693px) {
   .toggle-button-nav {
     display: flex;
+  }
+  html {
+    font-size: 0.9em;
   }
   .navbar-button {
     display: none;
