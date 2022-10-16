@@ -9,15 +9,15 @@
 :root {
   --font-display: "Nunito", sans-serif;
   --font-paragraph: "Roboto", sans-serif;
-  --color-primary: #001d38;
-  --color-secondary: #e9ebea;
+  --color-primary: #000e1b;
+  --color-secondary: #cfcfcf;
   --color-secondary-section: #e9ebea;
   --color-secondary-light: #eff1f0;
   --color-secondary-dark: #ececec;
   --color-secondary-darker: #dfdfdf;
-  --color-accent1: #a01e3a;
-  --color-accent2: #2a99c6;
-  --color-accent3: #2c3bbe;
+  --color-accent1: #9b2000;
+  --color-accent2: #80089c;
+  --color-accent3: #a13317;
 }
 
 html {
@@ -119,8 +119,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--color-accent2);
-  border: 0px solid var(--color-accent2);
+  filter: brightness(1.4);
 }
 
 /* LINKS */
@@ -237,12 +236,11 @@ header h1 {
   border-radius: 10px;
   border: none;
   gap: 1rem;
-  background-color: var(--color-accent1);
+  background-color: var(--color-primary);
 }
 
 .advantages_card:hover {
-  box-shadow: 5px 5px 12px rgba(33, 33, 33, 0.4);
-  background-color: var(--color-accent2);
+  box-shadow: 6px 6px 12px rgba(20, 20, 20, 0.4);
   transition: 0.5s ease;
   cursor: pointer;
 }
@@ -373,7 +371,7 @@ header h1 {
 }
 
 .highlight_small_cards div {
-  background-color: var(--color-accent1);
+  background-color: var(--color-accent3);
   height: 125px;
   width: 500px;
   display: flex;
@@ -391,6 +389,7 @@ p {
 
 .highlight_small_cards div:hover {
   box-shadow: 5px 5px 12px rgba(33, 33, 33, 0.4);
+  filter: brightness(1.1);
   transition: 0.5s ease;
   cursor: pointer;
 }
@@ -575,7 +574,7 @@ footer h3 {
 }
 
 footer a {
-  color: var(--color-accent1);
+  color: var(--color-accent3);
   text-decoration: none;
   transition: 0.5s ease;
   position: relative;
