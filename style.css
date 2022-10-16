@@ -679,6 +679,12 @@ footer a:hover::after {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+  #product {
+    padding: 2.5rem;
+  }
+  #advantages {
+    padding: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
